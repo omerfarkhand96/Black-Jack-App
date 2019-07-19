@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CasinoWebApp.Master.cs" Inherits="CasinoWebApp.CasinoWebApp" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="styles/CasinoWebAppMasterpage.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align: right" class="masterMenu">
+            <asp:Label ID="LblWelcome" runat="server"></asp:Label>
+            <asp:LinkButton ID="LBLogout" runat="server" Text="Logout" OnClick="LBLogout_Click" />
+            <asp:LinkButton ID="LBLogin" runat="server" Text="Login" OnClick="LBLogin_Click" />
+        </div>
+        <asp:SiteMapDataSource ID="CasinoWebAppSiteMapData" runat="server" ShowStartingNode="false" />
+        <div id="navBar" >
+            <asp:Menu ID="MainMenu" runat="server" CssClass="MainMenu"
+                DataSourceID="CasinoWebAppSiteMapData" Orientation="Horizontal" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

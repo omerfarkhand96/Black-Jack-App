@@ -1,0 +1,33 @@
+﻿.masterMenu {
+    background: #2c3e50;
+    color: green;
+    font-family: sans-serif;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+    .masterMenu a {
+        color: white;
+    }
+
+        .masterMenu a.dynamic {
+            color: white;
+        }
+
+    .masterMenu ul {
+        background-color: black;
+    }
+
+#navBar {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#navBar a {
+    color: white;
+}
